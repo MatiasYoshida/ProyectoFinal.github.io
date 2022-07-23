@@ -1,0 +1,45 @@
+#contacto{
+
+    grid-area: seccionContacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+    background-color: $colorFondo;
+
+    section{
+        font-family: $seccionesTipografia;
+        form{
+            display: flex;
+            flex-direction: column;
+            input{
+                @extend %contacto; 
+            }
+            textarea{
+                @extend %contacto;
+                border-width: 2px;
+            }
+            #button{
+                &:hover{
+                   @extend %animacionBoton;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    #contacto{
+        input{
+            width: 150px;
+        }
+        textarea{
+            width: 150px;
+        }
+    }
+}
+    

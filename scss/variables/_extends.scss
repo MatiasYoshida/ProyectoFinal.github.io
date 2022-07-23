@@ -1,0 +1,36 @@
+//EXTEND
+
+%footer{
+    grid-area: footer; 
+    background-color: $colorAzul;
+    background-image: linear-gradient(to bottom, #eca677, $colorAzul);
+}
+
+%header{
+    grid-area: header; 
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    justify-content: space-between;
+    background-color: $colorAzul;
+    background-image: linear-gradient(to top, #eca677, $colorAzul);
+    
+}
+
+%contacto{
+    margin-bottom: 1rem;
+    border-color: $colorAzul;
+    border-radius: 8px;
+    background-color: $blanco;
+}
+
+%animacionBoton{
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+//MIXINS
+
+@mixin img($margin,$width){
+    margin: $margin;
+    width: $width;
+}
